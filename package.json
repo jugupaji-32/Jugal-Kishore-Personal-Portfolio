@@ -1,0 +1,15 @@
+{
+  "name": "jugal",
+  "version": "1.0.0",
+  "description": "Portfolio site with nodemailer contact form backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "nodemailer": "^10.1.0"
+  }
+}

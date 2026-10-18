@@ -1,0 +1,42 @@
+/* custom-remove-blog.css
+   Purpose: hide/remove blog-related UI without editing the large theme CSS.
+   This is intentionally broad but reversible. If you want exact removals, I can
+   refine selectors or remove specific CSS blocks from css/gmDnFYhL6tjJ.css.
+*/
+
+/* Hide any element whose class or id contains "blog" */
+[class*="blog"], [id*="blog"] {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Hide common blog/post widgets and blocks */
+.widget_recent_entries,
+.widget_rss,
+.widget_recent_comments,
+.widget_archive,
+.widget_tag_cloud,
+.wp-block-latest-posts,
+.wp-block-post-template,
+.post-author,
+.post-tags,
+.post-pagi-area,
+.post-wrap,
+.post-comment,
+.blog-comment-area,
+.comments-area,
+.blog-slider,
+.blog-single-comment {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Reduce any leftover spacing from hidden blog sections */
+.wrapper-content > *:not(:last-child) {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
